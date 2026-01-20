@@ -217,7 +217,8 @@ This project **does not attempt to emulate TLS, certificates, or browser quirks*
 
 ## Screenshots
 
-![Logs](Mockup-Log-Files.png)
+![Mockup](mockup.png)
+![Logs](logs.png)
 
 ## Exigence Project Introduction
 
