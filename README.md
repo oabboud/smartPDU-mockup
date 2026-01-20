@@ -217,9 +217,7 @@ This project **does not attempt to emulate TLS, certificates, or browser quirks*
 
 ## Screenshots
 
-![Main UI](images/1.png)
-![Settings Panel](images/2.png)
-![Results View](images/3.png)
+![Logs](Mockup-Log-Files.png)
 
 ## Exigence Project Introduction
 
