@@ -73,7 +73,10 @@ Features
 Repository Structure
 --------------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   .  ├── mock_pdu_api.py              # FastAPI-based SmartPDU Redfish mock  ├── test_mock_pdu_api.py         # Pytest tests for the mock API  ├── pdu_live_gui_heatmap.py      # Live Tkinter GUI with power heat map  ├── README.md                    # This file   `
+├── mock_pdu_api.py # FastAPI-based SmartPDU Redfish mock
+├── test_mock_pdu_api.py # Pytest test suite
+├── pdu_live_gui_heatmap.py # Live GUI with power heat map
+├── README.md # Project documentation
 
 Requirements
 ------------
