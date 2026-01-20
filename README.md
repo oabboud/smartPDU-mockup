@@ -114,7 +114,7 @@ Quick Start
 
 ### 1\. Clone the repository
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`git clone https://github.com//.git  cd` 
+git clone https://github.com//.git  cd` 
 
 ### 2\. Install dependencies
 
@@ -212,3 +212,6 @@ Intended Use Cases
     
 
 This project **does not attempt to emulate TLS, certificates, or browser quirks**.It focuses strictly on **client-side integration logic** and data correctness.
+
+Acknolegements:
+This was created as part of the SNS JU Ecigence Project on Sustainbility in 6G
