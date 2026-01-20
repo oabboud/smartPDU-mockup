@@ -118,18 +118,18 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 ### 2\. Install dependencies
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   pip install fastapi uvicorn requests pytest   `
+pip install fastapi uvicorn requests pytest   `
 
 Running the Mock SmartPDU Backend
 ---------------------------------
 
 Start the Redfish-style SmartPDU API:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   uvicorn mock_pdu_api:app --host 127.0.0.1 --port 8000   `
+uvicorn mock_pdu_api:app --host 127.0.0.1 --port 8000   `
 
 The API will be available at:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   http://127.0.0.1:8000/redfish/v1/   `
+http://127.0.0.1:8000/redfish/v1/   `
 
 ### Default credentials
 
@@ -145,7 +145,7 @@ Running the Live GUI
 
 With the backend running in another terminal:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   python pdu_live_gui_heatmap.py \    --base-url http://127.0.0.1:8000 \    --pdu-id 2 \    --user admin \    --password 123456789 \    --refresh 1.0 \    --autoscale   `
+python pdu_live_gui_heatmap.py \    --base-url http://127.0.0.1:8000 \    --pdu-id 2 \    --user admin \    --password 123456789 \    --refresh 1.0 \    --autoscale   `
 
 ### GUI behavior
 
@@ -171,7 +171,7 @@ Outlet Layout
 
 The GUI uses a **2 × 24 layout**:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   Column 0 (left):   outlets  1 .. 24  (top → bottom)  Column 1 (right):  outlets 25 .. 48  (top → bottom)   `
+Column 0 (left):   outlets  1 .. 24  (top → bottom)  Column 1 (right):  outlets 25 .. 48  (top → bottom)   `
 
 This matches common vertical rack PDU physical layouts and makes thermal or power hotspots immediately visible.
 
@@ -180,7 +180,7 @@ Testing the Backend
 
 Run the API test suite:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   pytest -q   `
+pytest -q   `
 
 The tests validate:
 
