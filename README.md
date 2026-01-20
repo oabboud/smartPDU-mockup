@@ -74,8 +74,11 @@ Repository Structure
 --------------------
 
 ├── mock_pdu_api.py # FastAPI-based SmartPDU Redfish mock
+
 ├── test_mock_pdu_api.py # Pytest test suite
+
 ├── pdu_live_gui_heatmap.py # Live GUI with power heat map
+
 ├── README.md # Project documentation
 
 Requirements
