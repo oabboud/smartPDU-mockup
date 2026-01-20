@@ -213,5 +213,14 @@ Intended Use Cases
 
 This project **does not attempt to emulate TLS, certificates, or browser quirks**.It focuses strictly on **client-side integration logic** and data correctness.
 
-Acknolegements:
-This was created as part of the SNS JU Ecigence Project on Sustainbility in 6G
+
+
+## Screenshots
+
+![Main UI](images/1.png)
+![Settings Panel](images/2.png)
+![Results View](images/3.png)
+
+## Exigence Project Introduction
+
+[Watch on YouTube](https://www.youtube.com/watch?v=LcXthE6rZCM&t=50s)
