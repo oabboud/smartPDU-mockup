@@ -95,6 +95,15 @@ Requirements
         
     *   sudo apt install python3-tk
         
+## Screenshots
+Gui Front End
+
+![Mockup](mockup.png)
+
+Mockup Backend
+
+![Logs](logs.png)
+
 
 Quick Start
 -----------
@@ -171,16 +180,10 @@ Intended Use Cases
 
 This project **does not attempt to emulate TLS, certificates, or browser quirks**.It focuses strictly on **client-side integration logic** and data correctness.
 
-## Screenshots
 
-![Mockup](mockup.png)
-![Logs](logs.png)
 
 ## Acknoledgement
-This work has been funded by the European Commission Horizon Europe
-Smart Networks and Services Joint Undertaking (SNS JU) MultiX Project
-(Grant Agreement No. 101192521) and EXIGENCE Project (Grant Agreements
-No. 101139120).
+This work has been funded by the European Commission Horizon Europe Smart Networks and Services Joint Undertaking (SNS JU) EXIGENCE Project (Grant Agreement No. 101139120).
 
 ** Project Overview:**
 ----------------------
