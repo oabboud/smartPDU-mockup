@@ -114,7 +114,7 @@ This project **does not attempt to emulate TLS, certificates, or browser quirks*
 
 
 
-## Acknoledgement
+## Acknowledgement
 This work has been funded by the European Commission Horizon Europe Smart Networks and Services Joint Undertaking (SNS JU) EXIGENCE Project (Grant Agreement No. 101139120).
 
 [Exigence Overview on YouTube](https://www.youtube.com/watch?v=LcXthE6rZCM&t=50s)
