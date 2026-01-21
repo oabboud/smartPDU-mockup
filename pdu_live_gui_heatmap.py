@@ -17,7 +17,6 @@ Coloring:
 
 Requirements:
   pip install requests
-  (Tkinter usually included; on minimal Linux you may need python3-tk)
 
 Run:
   python pdu_live_gui_heatmap.py --base-url http://127.0.0.1:8000 --pdu-id 2 --user admin --password 123456789 --refresh 1.0
@@ -427,3 +426,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
