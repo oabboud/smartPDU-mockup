@@ -11,33 +11,20 @@ Features
 ### Mock SmartPDU Backend
 
 *   Implements **SmartPDU-style Redfish endpoints**
-    
 *   Redfish-like payload shapes:
-    
-    *   @odata.id, @odata.type
-        
+    *   @odata.id, @odata.type    
     *   Collections with Members and Members@odata.count
-        
     *   Status { State, Health }
-        
     *   Sensors with Reading and ReadingUnits
         
 *   Supports:
-    
     *   SessionService
-        
     *   AccountService
-        
     *   Managers
-        
     *   PowerEquipment / RackPDUs
-        
     *   Outlets, Branches, Mains
-        
     *   Power, Energy, Voltage, Current, Frequency sensors
-        
     *   EventService subscriptions
-        
     *   Load segment power control
         
 *   Generates **plausible, internally consistent electrical data**:
@@ -114,7 +101,7 @@ Quick Start
 
 ### 1\. Clone the repository
 
-git clone https://github.com//.git  cd` 
+git clone https://github.com//.git  cd
 
 ### 2\. Install dependencies
 
@@ -125,11 +112,11 @@ Running the Mock SmartPDU Backend
 
 Start the Redfish-style SmartPDU API:
 
-uvicorn mock_pdu_api:app --host 127.0.0.1 --port 8000   `
+uvicorn mock_pdu_api:app --host 127.0.0.1 --port 8000
 
 The API will be available at:
 
-http://127.0.0.1:8000/redfish/v1/   `
+http://127.0.0.1:8000/redfish/v1/
 
 ### Default credentials
 
@@ -145,7 +132,7 @@ Running the Live GUI
 
 With the backend running in another terminal:
 
-python pdu_live_gui_heatmap.py \    --base-url http://127.0.0.1:8000 \    --pdu-id 2 \    --user admin \    --password 123456789 \    --refresh 1.0 \    --autoscale   `
+python pdu_live_gui_heatmap.py --base-url http://127.0.0.1:8000 --pdu-id 2 --user admin --password 123456789 --refresh 1.0 --autoscale   `
 
 ### GUI behavior
 
@@ -171,7 +158,7 @@ Outlet Layout
 
 The GUI uses a **2 × 24 layout**:
 
-Column 0 (left):   outlets  1 .. 24  (top → bottom)  Column 1 (right):  outlets 25 .. 48  (top → bottom)   `
+Column 0 (left):   outlets  1 .. 24  (top → bottom)  Column 1 (right):  outlets 25 .. 48  (top → bottom)
 
 This matches common vertical rack PDU physical layouts and makes thermal or power hotspots immediately visible.
 
@@ -180,7 +167,7 @@ Testing the Backend
 
 Run the API test suite:
 
-pytest -q   `
+pytest -q
 
 The tests validate:
 
