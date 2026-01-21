@@ -8,20 +8,6 @@ Run:
 Test:
   pip install pytest
   pytest -q
-
-Design goals:
-- Keep your listed SmartPDU endpoints/paths
-- Emit more Redfish-like payload shapes:
-  - @odata.id, @odata.type, Id, Name
-  - Collections: Members, Members@odata.count
-  - Status: {State, Health}
-  - Sensors: Reading, ReadingUnits, ReadingType, PhysicalContext
-  - Actions with target + allowable values (where relevant)
-  - Redfish-ish error envelope in responses
-- Simple auth model matching your snippet:
-  - GET + DELETE require Basic Auth
-  - Session create returns X-Auth-Token
-  - Certain POST require X-Auth-Token (EventService subscriptions, Loadsegment control)
 """
 
 from __future__ import annotations
@@ -228,7 +214,7 @@ def require_token(x_authtoken: Optional[str]) -> Session:
 
 
 # -------------------------
-# Measurement model (EC plausible & consistent)
+# Measurement model 
 # -------------------------
 
 def _small_jitter(seed: int) -> float:
@@ -304,7 +290,7 @@ def freq_hz() -> float:
 
 
 # -------------------------
-# Error handling (Redfish-ish envelope)
+# Error handling
 # -------------------------
 
 @app.exception_handler(HTTPException)
@@ -1107,3 +1093,4 @@ def delete_subscription(request: Request, sub_id: str):
         raise_rf(404, "Base.1.0.ResourceMissingAtURI", "Subscription not found")
     SUBSCRIPTIONS.pop(sub_id, None)
     return Response(status_code=204)
+
