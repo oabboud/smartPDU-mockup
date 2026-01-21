@@ -101,11 +101,11 @@ Quick Start
 
 ### 1\. Clone the repository
 
-git clone https://github.com//.git  cd
+git clone https://github.com/oabboud/smartPDU-mockup.git
 
 ### 2\. Install dependencies
 
-pip install fastapi uvicorn requests pytest   `
+pip install fastapi uvicorn requests pytest
 
 Running the Mock SmartPDU Backend
 ---------------------------------
@@ -115,16 +115,13 @@ Start the Redfish-style SmartPDU API:
 uvicorn mock_pdu_api:app --host 127.0.0.1 --port 8000
 
 The API will be available at:
-
 http://127.0.0.1:8000/redfish/v1/
 
 ### Default credentials
 
 *   Username: admin
-    
 *   Password: 123456789
-    
-
+*   
 Basic authentication is required for all GET and DELETE requests.
 
 Running the Live GUI
@@ -132,7 +129,7 @@ Running the Live GUI
 
 With the backend running in another terminal:
 
-python pdu_live_gui_heatmap.py --base-url http://127.0.0.1:8000 --pdu-id 2 --user admin --password 123456789 --refresh 1.0 --autoscale   `
+python pdu_live_gui_heatmap.py --base-url http://127.0.0.1:8000 --pdu-id 2 --user admin --password 123456789 --refresh 1.0 --autoscale
 
 ### GUI behavior
 
@@ -142,25 +139,10 @@ python pdu_live_gui_heatmap.py --base-url http://127.0.0.1:8000 --pdu-id 2 --use
     
 *   Displays:
     
-    *   Outlet number
-        
-    *   Power (W)
-        
-    *   Energy (kWh)
-        
-    *   ON / OFF state
+    *   Outlet number, Power (W), Energy (kWh), ON / OFF state
         
 *   Auto-scaled heat map adapts to observed load distribution
     
-
-Outlet Layout
--------------
-
-The GUI uses a **2 × 24 layout**:
-
-Column 0 (left):   outlets  1 .. 24  (top → bottom)  Column 1 (right):  outlets 25 .. 48  (top → bottom)
-
-This matches common vertical rack PDU physical layouts and makes thermal or power hotspots immediately visible.
 
 Testing the Backend
 -------------------
@@ -172,41 +154,34 @@ pytest -q
 The tests validate:
 
 *   Redfish-style payload shapes
-    
 *   Authentication behavior
-    
 *   Sensor consistency
-    
 *   Energy monotonicity
-    
 *   Load segment power control
-    
 *   Event subscription lifecycle
     
-
 Intended Use Cases
 ------------------
 
 *   EC aggregation client development
-    
 *   Redfish polling logic validation
-    
 *   Unit and integration testing without hardware
-    
 *   Power / energy visualization demos
-    
 *   Training and documentation
-    
 
 This project **does not attempt to emulate TLS, certificates, or browser quirks**.It focuses strictly on **client-side integration logic** and data correctness.
-
-
 
 ## Screenshots
 
 ![Mockup](mockup.png)
 ![Logs](logs.png)
 
-## Exigence Project Introduction
+## Acknoledgement
+This work has been funded by the European Commission Horizon Europe
+Smart Networks and Services Joint Undertaking (SNS JU) MultiX Project
+(Grant Agreement No. 101192521) and EXIGENCE Project (Grant Agreements
+No. 101139120).
 
+** Project Overview:**
+----------------------
 [Watch on YouTube](https://www.youtube.com/watch?v=LcXthE6rZCM&t=50s)
