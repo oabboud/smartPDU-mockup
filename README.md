@@ -28,73 +28,19 @@ Features
     *   Load segment power control
         
 *   Generates **plausible, internally consistent electrical data**:
-    
     *   Power ≈ Voltage × Current
-        
-    *   Monotonic energy counters
-        
-    *   PDU totals reconcile with outlet totals
-        
+    *   Energy counters
+    *   PDU totals
 
-### Live GUI (Tkinter)
-
-*   Real desktop GUI (not static plots)
-    
-*   **2 × 24 outlet layout** (48 outlets total)
-    
-*   **Heat map coloring based on live outlet power**
-    
+### Live GUI   
+*   **Heat map coloring based on live outlet power**   
     *   Blue → low power
-        
     *   Yellow → medium power
-        
     *   Red → high power
-        
-*   ON / OFF state clearly indicated
-    
+*   ON / OFF state
 *   Live polling from the mock Redfish API
-    
-*   Optional auto-scaling heat map
-    
 
-Repository Structure
---------------------
-
-├── mock_pdu_api.py # FastAPI-based SmartPDU Redfish mock
-
-├── test_mock_pdu_api.py # Pytest test suite
-
-├── pdu_live_gui_heatmap.py # Live GUI with power heat map
-
-├── README.md # Project documentation
-
-Requirements
-------------
-
-### Python
-
-*   Python 3.9+
-    
-
-### Backend
-
-*   fastapi
-    
-*   uvicorn
-    
-*   pytest (for tests)
-    
-
-### GUI
-
-*   requests
-    
-*   Tkinter
-    
-    *   Included with most Python installations
-        
-    *   sudo apt install python3-tk
-        
+       
 ## Screenshots
 Gui Front End
 
@@ -103,8 +49,7 @@ Gui Front End
 Mockup Backend
 
 ![Logs](logs.png)
-
-
+    
 Quick Start
 -----------
 
@@ -130,7 +75,7 @@ http://127.0.0.1:8000/redfish/v1/
 
 *   Username: admin
 *   Password: 123456789
-*   
+  
 Basic authentication is required for all GET and DELETE requests.
 
 Running the Live GUI
@@ -139,19 +84,6 @@ Running the Live GUI
 With the backend running in another terminal:
 
 python pdu_live_gui_heatmap.py --base-url http://127.0.0.1:8000 --pdu-id 2 --user admin --password 123456789 --refresh 1.0 --autoscale
-
-### GUI behavior
-
-*   Updates every --refresh seconds
-    
-*   Colors outlets based on **PowerOUTLETn**
-    
-*   Displays:
-    
-    *   Outlet number, Power (W), Energy (kWh), ON / OFF state
-        
-*   Auto-scaled heat map adapts to observed load distribution
-    
 
 Testing the Backend
 -------------------
@@ -185,6 +117,4 @@ This project **does not attempt to emulate TLS, certificates, or browser quirks*
 ## Acknoledgement
 This work has been funded by the European Commission Horizon Europe Smart Networks and Services Joint Undertaking (SNS JU) EXIGENCE Project (Grant Agreement No. 101139120).
 
-** Project Overview:**
-----------------------
-[Watch on YouTube](https://www.youtube.com/watch?v=LcXthE6rZCM&t=50s)
+[Exigence Overview on YouTube](https://www.youtube.com/watch?v=LcXthE6rZCM&t=50s)
