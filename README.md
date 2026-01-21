@@ -108,10 +108,6 @@ Intended Use Cases
 *   Redfish polling logic validation
 *   Unit and integration testing without hardware
 *   Power / energy visualization demos
-*   Training and documentation
-
-This project **does not attempt to emulate TLS, certificates, or browser quirks**.It focuses strictly on **client-side integration logic** and data correctness.
-
 
 
 ## Acknowledgement
